@@ -141,7 +141,7 @@ impl Component for Chat {
         html! {
             <div class="flex w-screen">
                 <div class="flex-none w-56 h-screen bg-gray-100">
-                    <div class="text-xl p-3">{"Users"}</div>
+                <div class="text-xl p-3">{"Users ("}{self.users.len()}{")"}</div>
                     {
                         self.users.clone().iter().map(|u| {
                             html!{
